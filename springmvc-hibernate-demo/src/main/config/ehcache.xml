@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+    <diskStore path="/Users/leonwang/tmp/ehcache/"></diskStore>
+    
+    <!-- 默认缓存配置 -->
+    <defaultCache
+        maxElementsInMemory="10000"
+        eternal="false"
+        timeToIdleSeconds="120"
+        timeToLiveSeconds="120"
+        overflowToDisk="true"
+    />
+    
+    <!-- User缓存配置 -->
+    <cache 
+        name="com.leon.bean.Userinfo" 
+        maxElementsInMemory="10000" 
+        eternal="false"
+        timeToIdleSeconds="20" 
+        timeToLiveSeconds="20" 
+        overflowToDisk="true" 
+    />
+
+</ehcache>
