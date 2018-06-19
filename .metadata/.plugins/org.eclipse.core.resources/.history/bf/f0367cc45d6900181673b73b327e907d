@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class FIFOCache<T> {
+	private int capacity;
+	private int size;
+	private ArrayList<String> keys;
+	private HashMap<String,T> container;
+	public FIFOCache(int capacity) {
+		this.capacity=capacity;
+		keys = new ArrayList<>();
+		container = new HashMap<>(capacity);
+		size = 0;
+	}
+	public void put(String key, T value){
+		if(size>capacity){
+			String rmdkey = keys.remove(0);  //移除第一个元素
+			container.remove(rmdkey);
+		}else{
+			size++;
+		}
+		keys.add(key);
+		container.put(key, value);
+	}
+	
+}

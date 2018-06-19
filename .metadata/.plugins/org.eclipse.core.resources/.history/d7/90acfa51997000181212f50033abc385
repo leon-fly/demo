@@ -1,0 +1,12 @@
+package com.leon.demo.designpattern.create;
+
+/**
+ * 简单工厂模式
+ * 屏蔽产品生成过程，是生产和使用分离
+ * @author leonwang
+ *
+ */
+public class SimpleFactoryDemo {
+	
+}
+

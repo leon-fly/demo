@@ -1,0 +1,26 @@
+package com.leon.demo.designpattern.create;
+
+public class SingletonDemo {
+	public static void main(String[] args) {
+		Singleton1 st = Singleton1.getInstance();
+		
+	}
+}
+
+
+/**
+ * 单例设计模式 - 恶汉式
+ * 在初始化时
+ * @author leonwang
+ *
+ */
+class Singleton1{
+	private static Singleton1 st = new Singleton1();  //私有静态
+	private Singleton1(){  //私有构造方法
+		System.out.println("初始化...");
+	}
+	public static Singleton1 getInstance(){  //共有静态
+		System.out.println("调用getInstance....");
+		return st;
+	}
+}

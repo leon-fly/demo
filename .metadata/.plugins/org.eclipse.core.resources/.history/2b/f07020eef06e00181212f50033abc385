@@ -1,0 +1,37 @@
+package com.leon.demo.thread;
+
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.Executor;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+import com.leon.demo.thread.comclass.MyRunnableTask;
+
+public class ExecutorsDemo {
+	public static void main(String[] args) {
+		BlockingQueue<Runnable> queue = new LinkedBlockingDeque<Runnable>();
+		ThreadPoolExecutor executor = new ThreadPoolExecutor(2, 5, 1000, TimeUnit.SECONDS, queue);
+//		executor.allowCoreThreadTimeOut(true);
+		executor.submit(new MyRunnableTask("1"));
+	}
+}
+
+class MyExecutorMonitor implements Runnable{
+	private ThreadPoolExecutor pool;
+	public MyExecutorMonitor(ThreadPoolExecutor pool) {
+		this.pool = pool;
+	}
+	@Override
+	public void run() {
+		System.out.println("pool监控启动--------");
+		while (!pool.getQueue().isEmpty()) {
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}

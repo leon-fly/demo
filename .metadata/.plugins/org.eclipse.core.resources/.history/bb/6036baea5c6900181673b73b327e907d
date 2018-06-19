@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class FIFOCache<T> {
+	private int capacity;
+	private ArrayList<String> keys;
+	private HashMap<String,T> container;
+	public FIFOCache(int capacity) {
+		this.capacity=capacity;
+		keys = new ArrayList<>();
+		container = new HashMap<>(capacity);
+	}
+	
+	
+}

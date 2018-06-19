@@ -1,0 +1,14 @@
+package com.leon.demo.thread;
+
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+public class ExecutorsDemo {
+	public static void main(String[] args) {
+		BlockingQueue<Runnable> queue = new LinkedBlockingDeque<Runnable>();
+		ThreadPoolExecutor executor = new ThreadPoolExecutor(2, 5, 1000, TimeUnit.SECONDS, queue);
+		executor.allowCoreThreadTimeOut(true);
+	}
+}

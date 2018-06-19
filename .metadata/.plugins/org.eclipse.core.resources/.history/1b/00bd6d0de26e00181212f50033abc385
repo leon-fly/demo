@@ -1,0 +1,11 @@
+package com.leon.demo.thread;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ExecutorsDemo {
+	public static void main(String[] args) {
+		ExecutorService executor = Executors.newFixedThreadPool(5);
+		executor.submit(new MyCallable("1"));
+	}
+}

@@ -1,0 +1,10 @@
+package com.leon.demo.thread.comclass;
+
+public class MyRunnableTask implements Runnable{
+
+	@Override
+	public void run() {
+		
+	}
+
+}

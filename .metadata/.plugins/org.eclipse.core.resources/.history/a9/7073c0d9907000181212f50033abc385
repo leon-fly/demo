@@ -1,0 +1,9 @@
+package com.leon.demo.designpattern.create;
+
+public class SingleTonDemo {
+
+}
+
+class SingleTon1{
+	
+}

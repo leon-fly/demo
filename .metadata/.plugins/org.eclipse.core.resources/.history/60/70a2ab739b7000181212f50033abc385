@@ -1,0 +1,11 @@
+package com.leon.demo.designpattern.create;
+/**
+ * 
+ * @author leonwang
+ * 抽象工厂模式
+ *
+ */
+public class AbstractFactoryDemo {
+	
+}
+

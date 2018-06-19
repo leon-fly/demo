@@ -1,0 +1,11 @@
+package com.leon.demo.designpattern.create;
+/**
+ * 
+ * @author leonwang
+ * 抽象工厂模式，与简单工厂模式的区别在于较简单工厂模式复杂，
+ *
+ */
+public class AbstractFactoryDemo {
+	
+}
+

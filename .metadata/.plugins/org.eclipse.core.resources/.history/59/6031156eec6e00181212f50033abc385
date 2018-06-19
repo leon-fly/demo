@@ -1,0 +1,24 @@
+package com.leon.demo.thread.comclass;
+
+import java.util.Date;
+import java.util.Random;
+
+public class MyCallable {
+	private String taskNum;
+
+	MyCallable(String taskNum) {
+		this.taskNum = taskNum;
+	}
+
+	public String call() throws Exception {
+		System.out.println(">>>" + taskNum + "任务开始");
+		Date dateTmp1 = new Date();
+		int sleepTime = new Random().nextInt(100)*1000;
+		System.out.println(taskNum+"任务休眠时间："+sleepTime);
+		Thread.sleep(sleepTime);
+		Date dateTmp2 = new Date();
+		long time = dateTmp2.getTime() - dateTmp1.getTime();
+		System.out.println(">>>" + taskNum + "任务终止");
+		return (taskNum + "任务返回运行结果,当前任务时间【" + time + "毫秒】,休眠时间："+sleepTime);
+	}
+}

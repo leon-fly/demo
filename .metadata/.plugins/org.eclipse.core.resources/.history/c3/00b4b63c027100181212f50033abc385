@@ -1,0 +1,10 @@
+package com.leon.demo.designpattern.create;
+/**
+ * 建造者模式
+ * 
+ * @author leonwang
+ *
+ */
+public class BuilderDemo {
+
+}

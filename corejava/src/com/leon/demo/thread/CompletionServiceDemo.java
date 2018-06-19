@@ -10,6 +10,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import com.leon.demo.thread.comclass.MyCallableTask;
+
 /**
  * 有返回值的线程池结果获取优化（执行完成一个获取一个，而非按提交执行的顺序等待获取），对比ThreadDemo的testExecutor
  * @author leonwang
@@ -24,10 +26,10 @@ public class CompletionServiceDemo {
 		// 创建一个线程池
 		ExecutorService pool = Executors.newFixedThreadPool(taskSize);	
 		// 创建多个有返回值的任务
-		BlockingQueue<Future<Object>> queue = new ArrayBlockingQueue<Future<Object>>(taskSize) ;
-		ExecutorCompletionService<Object> ecs = new ExecutorCompletionService<Object>(pool,queue);
+		BlockingQueue<Future<String>> queue = new ArrayBlockingQueue<Future<String>>(taskSize) ;
+		ExecutorCompletionService<String> ecs = new ExecutorCompletionService<String>(pool,queue);
 		for (int i = 0; i < taskSize; i++) {
-			Callable<Object> c = new MyCallable(i + " ");
+			Callable<String> c = new MyCallableTask(i + " ");
 			// 执行任务并获取Future对象
 			ecs.submit(c);
 			System.out.println(">>>threadpool submit 结束-----"+i );
@@ -38,7 +40,7 @@ public class CompletionServiceDemo {
 		int num=1;
 		// 获取所有并发任务的运行结果
 		for (int i=0;i<taskSize;i++) {
-			System.out.println(">>>循环获取第"+num+"个");
+//			System.out.println(">>>循环获取第"+num+"个");
 			// 从Future对象上获取任务的返回值，并输出到控制台
 			System.out.println(">>>第"+num+++"个future的线程执行结果值为：" + ecs.take().get().toString());
 		}

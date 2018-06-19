@@ -1,11 +1,11 @@
 eclipse.preferences.version=1
 org.eclipse.jdt.core.builder.resourceCopyExclusionFilter=
-org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=/private/var/folders/tx/_gxm3hxd56gbnbl9m57787_r0000gn/T/AppTranslocation/5F68ED92-DA40-4E57-96CF-DEBAAF3C78A1/d/Eclipse.app/Contents/Eclipse/
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=/private/var/folders/tx/_gxm3hxd56gbnbl9m57787_r0000gn/T/AppTranslocation/3E7062E7-F99C-461F-8A36-30AA60565C6E/d/Eclipse.app/Contents/Eclipse/
 org.eclipse.jdt.core.classpathVariable.JRE_LIB=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar
 org.eclipse.jdt.core.classpathVariable.JRE_SRC=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip
 org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=src
-org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=/private/var/folders/tx/_gxm3hxd56gbnbl9m57787_r0000gn/T/AppTranslocation/5F68ED92-DA40-4E57-96CF-DEBAAF3C78A1/d/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.12.0.v201504281640/
-org.eclipse.jdt.core.classpathVariable.JUNIT_SRC_HOME=/private/var/folders/tx/_gxm3hxd56gbnbl9m57787_r0000gn/T/AppTranslocation/5F68ED92-DA40-4E57-96CF-DEBAAF3C78A1/d/Eclipse.app/Contents/Eclipse/plugins/org.junit.source_4.12.0.v201504281640.jar
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=/private/var/folders/tx/_gxm3hxd56gbnbl9m57787_r0000gn/T/AppTranslocation/3E7062E7-F99C-461F-8A36-30AA60565C6E/d/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.12.0.v201504281640/
+org.eclipse.jdt.core.classpathVariable.JUNIT_SRC_HOME=/private/var/folders/tx/_gxm3hxd56gbnbl9m57787_r0000gn/T/AppTranslocation/3E7062E7-F99C-461F-8A36-30AA60565C6E/d/Eclipse.app/Contents/Eclipse/plugins/org.junit.source_4.12.0.v201504281640.jar
 org.eclipse.jdt.core.classpathVariable.M2_REPO=/Users/leonwang/.m2/repository
 org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled

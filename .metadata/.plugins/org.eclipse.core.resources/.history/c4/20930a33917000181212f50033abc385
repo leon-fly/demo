@@ -1,0 +1,21 @@
+package com.leon.demo.designpattern.create;
+
+public class SingleTonDemo {
+
+}
+
+
+/**
+ * 单例设计模式 - 恶汉式
+ * @author leonwang
+ *
+ */
+class SingleTon1{
+	private SingleTon1 sl = new SingleTon1();
+	private SingleTon1(){
+		
+	}
+	public SingleTon1 getInstance(){
+		return sl;
+	}
+}

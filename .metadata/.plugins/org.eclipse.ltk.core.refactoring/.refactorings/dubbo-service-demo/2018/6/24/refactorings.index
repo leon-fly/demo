@@ -1,0 +1,16 @@
+1528615914742	Rename package 'com.leon.demo.dubbo_client_demo.service'
+1528615930370	Rename package 'com.leon.demo.dubbo_client_demo.service.impl'
+1528616047390	Delete element
+1528616126794	Delete element
+1528620810096	Delete element
+1528620874663	Move 'dubbo.properties' to 'dubbo'
+1528620994811	Move 'dubbo.properties' to 'resources'
+1528621003653	Delete element
+1528621007332	Delete element
+1528623127887	Rename resource 'dubbo.properties'
+1528623232433	Delete element
+1528623238328	Delete element
+1528624541931	Copy file
+1528624733970	Copy file
+1528631578079	Copy package
+1528642399402	Delete element

@@ -1,5 +1,6 @@
 package com.leon.demo.collection;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -8,6 +9,23 @@ import java.util.TreeSet;
 
 public class SimpleDemo {
 	public static void main(String[] args) {
+		arrayListDemo();
+	}
+	
+	public static void arrayListDemo(){
+		/**
+		 * remove时重复元素只删除第一个
+		 */
+		ArrayList<String> al = new ArrayList<>();
+		al.add(null);
+		al.add(null);
+		System.out.println(al.size());
+		al.remove(null);
+		System.out.println(al.size());
+		
+	}
+	
+	public static void basicDemo(){
 //		ArrayList<Object> list = new ArrayList<Object>();   //数组实现
 		LinkedList<Object> list = new LinkedList<>();
 		list.add(1);
