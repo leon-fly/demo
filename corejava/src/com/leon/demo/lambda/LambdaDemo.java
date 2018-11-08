@@ -21,7 +21,6 @@ public class LambdaDemo {
 		//
 		Consumer<String> consumer = (String x) -> System.out.print(x);
 		list.forEach(consumer);
-		
 	}
 	
 	
