@@ -8,6 +8,7 @@ public class ExtendsFeaturesDemo {
 	public static void main(String[] args) {
 		FatherC fa = new SonC();
 		FatherI fi = new SonI();
+
 		fa.proMethod();
 		fi.pubMethod();
 	}
@@ -21,6 +22,9 @@ abstract class FatherC{
 	protected void proMethod(){
 		System.out.println("父类的protected方法");
 	}
+	void defMethod(){
+		System.out.println("父类的private方法");
+	}
 }
 
 
@@ -31,6 +35,10 @@ class SonC extends FatherC {
 	@Override
 	public void proMethod() {
 		System.out.println("子类SonC的protected方法");
+	}
+	@Override
+	void defMethod(){
+		System.out.println("父类的private方法");
 	}
 }
 

@@ -11,13 +11,13 @@ public class CalculateDemo {
         System.out.println(10^12); //与或运算，按位，有一个1为1，两个1则为0
         System.out.println("-2 >> 1 = "+(-2 >> 1) );
         System.out.println("-5 >> 1 = "+(-5 >> 1));
-        
+
         System.out.println(1<<1);
         System.out.println(2<<1);
         System.out.println(3<<1);
         System.out.println(2>>1);
         System.out.println(3>>1);
         System.out.println(4>>1);
-       
+
 	}
 }

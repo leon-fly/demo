@@ -1,9 +1,0 @@
-package com.leon.demo.designpattern.create;
-/**
- * 
- * @author leonwang
- *
- */
-public class AbstractFactoryDemo {
-
-}

@@ -1,7 +1,0 @@
-package com.leon.demo.thread;
-
-public class ExecutorsDemo {
-	public static void main(String[] args) {
-		
-	}
-}

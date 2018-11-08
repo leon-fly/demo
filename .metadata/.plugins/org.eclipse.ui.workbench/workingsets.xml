@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<workingSetManager>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1528351245168_4" label="dubbo-demo" name="dubbo-demo"/>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1528375837326_5" label="dubbo-parent" name="dubbo-parent"/>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1528167009488_0" label="Window Working Set" name="Aggregate for window 1528167009487"/>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1528201315370_1" label="Window Working Set" name="Aggregate for window 1528201315370"/>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1528289322865_2" label="Window Working Set" name="Aggregate for window 1528289322865"/>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1528289774117_3" label="Window Working Set" name="Aggregate for window 1528289774117"/>
-</workingSetManager>
