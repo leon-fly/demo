@@ -1,6 +1,6 @@
 package com.leon.quote;
 
-import testbean.People;
+import com.leon.testbean.People;
 /**
  * java中基本数据类型为值传递，对象String为值传递，其他对象为引用传递，方法对对象做的修改影响原对象。
  * @author leonwang

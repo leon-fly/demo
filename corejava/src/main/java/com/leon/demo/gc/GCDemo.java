@@ -1,9 +1,8 @@
 package com.leon.demo.gc;
+import com.leon.testbean.People;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import testbean.People;
 
 public class GCDemo {
 	public static ArrayList<People> array = new ArrayList<>();

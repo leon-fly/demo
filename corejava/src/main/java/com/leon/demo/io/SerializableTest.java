@@ -1,11 +1,7 @@
 package com.leon.demo.io;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+import com.leon.testbean.People;
 
-import testbean.People;
+import java.io.*;
 public class SerializableTest {
 	/**
 	 * @param args

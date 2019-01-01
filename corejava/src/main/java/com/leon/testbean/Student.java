@@ -1,4 +1,4 @@
-package testbean;
+package com.leon.testbean;
 
 public class Student extends People{
 	/**

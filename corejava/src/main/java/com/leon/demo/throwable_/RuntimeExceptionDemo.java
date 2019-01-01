@@ -7,12 +7,13 @@ package com.leon.demo.throwable_;
  */
 public class RuntimeExceptionDemo {
     public static void main(String[] args) {
-        int i = testRuntimeException();
+        int i = testFinallyWithReturn();
         System.out.println("rtn:"+i);
-        testRuntimeException2();
+
+        testFinallyWithoutReturn();
     }
 
-    public static int testRuntimeException(){
+    public static int testFinallyWithReturn(){
         try{
             throw new RuntimeException("runtimeException");
         }finally {
@@ -20,7 +21,7 @@ public class RuntimeExceptionDemo {
             return 1;
         }
     }
-    public static void testRuntimeException2(){
+    public static void testFinallyWithoutReturn(){
         try{
             throw new RuntimeException("runtimeException");
         }finally {

@@ -1,4 +1,4 @@
-package testbean;
+package com.leon.testbean;
 
 import java.util.List;
 
