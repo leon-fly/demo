@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.leon.demo</groupId>
-  <artifactId>parent</artifactId>
+  <artifactId>demo-parent</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>parent</name>
+  <name>demo-parent</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
   <packaging>pom</packaging>
@@ -51,11 +50,11 @@
     <jhipster.version>1.1.9</jhipster.version>
     <bcprov.version>1.45</bcprov.version>
     <fastjson.version>1.2.31</fastjson.version>
+    <spring-cloud-start-eureka-server.version>1.4.6.RELEASE</spring-cloud-start-eureka-server.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
-
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
@@ -70,11 +69,15 @@
         <scope>import</scope>
       </dependency>
       <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-eureka-server</artifactId>
+        <version>${spring-cloud-start-eureka-server.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.alibaba</groupId>
         <artifactId>fastjson</artifactId>
         <version>${fastjson.version}</version>
       </dependency>
-
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-core</artifactId>
