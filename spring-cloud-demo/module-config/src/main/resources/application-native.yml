@@ -1,0 +1,13 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: spring-cloud-config-demo
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:config/
+

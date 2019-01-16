@@ -12,6 +12,7 @@
         <module>module-a</module>
         <module>module-eureka</module>
       <module>module-api</module>
+        <module>module-config</module>
     </modules>
 
     <name>spring-cloud-demo</name>
