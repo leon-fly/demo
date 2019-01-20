@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: 8888
 spring:
   application:
     name: spring-cloud-config-demo
@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:leon-fly/spring-cloud-config.git
+          uri: https://github.com/leon-fly/spring-cloud-config.git
 
     inetutils:
       timeout-seconds: 10
