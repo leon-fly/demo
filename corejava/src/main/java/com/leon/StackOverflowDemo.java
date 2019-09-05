@@ -1,5 +1,6 @@
+package com.leon;
 
-public class Test {
+public class StackOverflowDemo {
 	public static void main(String[] args) {
 		System.out.println("test");
 		test();
