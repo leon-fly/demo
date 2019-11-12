@@ -6,7 +6,7 @@
 
   <groupId>com.zkj</groupId>
   <artifactId>Notify4j</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
 
   <name>Notify4j</name>
   <url>http://www.example.com</url>

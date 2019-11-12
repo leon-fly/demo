@@ -5,6 +5,7 @@ import com.rabbitmq.client.*;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
+//类似于集群模式，过个节点共同处理任务，同一个任务只有一个节点在处理
 public class Worker {
 
 	private static final String TASK_QUEUE_NAME = "task_queue";

@@ -22,7 +22,7 @@ public class EmitLog {
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
         channel.exchangeDeclare(EXCHANGE_NAME, "fanout",true,true,null);  //声明一个fanout类型的交换组件
-        String message = "log content";
+        String message = "log content 1";
         channel.basicPublish(EXCHANGE_NAME, "", null, message.getBytes());
         System.out.println(" [x] Sent '" + message + "'");
         channel.close();
