@@ -3,6 +3,7 @@
 <head>
     <title>vue-helloworld</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
 </head>
 
 <body>
@@ -14,6 +15,12 @@
             鼠标悬停几秒钟查看此处动态绑定的提示信息！
         </span>
     </div>
+
+    <div id="app-3">
+        <div v-if="awesome">Vue is awesome</div>
+        <div v-else>Oh no 😢</div>
+    </div>
+
     <script>
         var app = new Vue({
             el: '#app',
@@ -28,6 +35,13 @@
                 message: '页面加载于 ' + new Date().toLocaleString()
             }
         })
+
+        var app3 = new Vue({
+            el: '#app-3',
+            data: {
+                awesome: true
+            }
+        });
     </script>
 </body>
 

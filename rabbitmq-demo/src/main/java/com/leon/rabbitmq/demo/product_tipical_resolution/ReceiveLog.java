@@ -3,6 +3,7 @@ package com.leon.rabbitmq.demo.product_tipical_resolution;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
+import com.leon.rabbitmq.demo.constant.ServiceConstant;
 import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -21,7 +22,7 @@ public class ReceiveLog {
 
 	public static void main(String[] args) throws IOException, TimeoutException {
 		ConnectionFactory factory = new ConnectionFactory();
-		factory.setHost("localhost");
+		factory.setHost(ServiceConstant.HOST_NAME);     factory.setPort(ServiceConstant.PORT);
 		Connection connection = factory.newConnection();
 		Channel channel = connection.createChannel();
 		channel.exchangeDeclare(EXCHANGE_NAME, "fanout"); // 声明一个fanout类型的交换组件

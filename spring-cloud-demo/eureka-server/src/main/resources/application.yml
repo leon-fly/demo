@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 9999
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    register-with-eureka: false #不向注册中心注册自己
+    fetch-registry: false #检索服务配置，自己本身维护注册信息，false表示不拉取
+  server:
+    enable-self-preservation: false #自我保护机制，false开发环境使用。自我保护机制：当出现大面积客户端丢失时（可能出现网络分区故障），eureka服务不再删除注册表中端数据

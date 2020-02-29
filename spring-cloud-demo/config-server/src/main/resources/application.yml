@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: spring-cloud-config-demo
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:config/
+        git:
+          uri: https://github.com/leon-fly/spring-cloud-config.git
+    inetutils:
+      timeout-seconds: 100
+
+management:
+  security:
+    enabled: false

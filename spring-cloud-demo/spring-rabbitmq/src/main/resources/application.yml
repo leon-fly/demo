@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: rabbitmq
+
+  rabbitmq:
+    host: www.leonwang.tech
+    port: 5672
+    username: admin
+    password: admin
+
+server:
+  port: 8084
+

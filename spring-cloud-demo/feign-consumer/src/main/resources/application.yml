@@ -1,0 +1,9 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9999/eureka/
+spring:
+  application:
+    name: reign-eureka-consumer
+server:
+  port: 8083
