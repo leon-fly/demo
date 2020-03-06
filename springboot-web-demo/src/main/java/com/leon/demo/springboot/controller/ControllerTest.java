@@ -16,6 +16,12 @@ public class ControllerTest {
 	public ModelAndView indexWithMess(){
 		ModelAndView mv = new ModelAndView("index");
 		mv.addObject("mess", "message from service~");
+
+		try {
+			Thread.currentThread().sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		return mv;
 	}
 }

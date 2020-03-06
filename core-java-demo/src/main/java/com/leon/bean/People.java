@@ -54,4 +54,8 @@ public class People implements Serializable {
         System.out.println("name:" + name + ", action:stand");
     }
 
+    private void priMethod(){
+        System.out.println("hello, i am private method");
+    }
+
 }

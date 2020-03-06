@@ -52,8 +52,6 @@ public class ThreadDemo {
 	 * @throws InterruptedException
 	 */
 	static void testCallable() throws InterruptedException, ExecutionException {
-		Thread t3 = new Thread(new FutureTask<String>(new WorkCallable()));
-		t3.start();
 
 		/*
 		 * FutureTask future = new FutureTask(new WorkCallable()); future.run();
