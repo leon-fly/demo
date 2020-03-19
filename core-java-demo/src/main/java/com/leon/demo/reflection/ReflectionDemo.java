@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 
 /**
  * @Author : leonwang
- * @Descpriction  google的guava和spring、apache都提供了对应都反射工具类
+ * @Descpriction google的guava和spring、apache都提供了对应都反射工具类
  * @Date:created 2020/3/6
  */
 
@@ -16,11 +16,18 @@ public class ReflectionDemo {
     public static void main(String[] args) throws Exception {
         Class<?> peopleClass = (Class<People>) Class.forName("com.leon.bean.People");
 
-        Method[] methods= peopleClass.getMethods();
-        System.out.println("获取方法-----------------");
+        System.out.println("获取类的所有public方法-----------------");
+        Method[] methods = peopleClass.getMethods();
         for (Method method : methods) {
             System.out.println(method);
         }
+
+        System.out.println("获取本类中全部访问权限的方法，但不包括父类的方法-----------------");
+        Method[] declaredMethods = peopleClass.getDeclaredMethods();
+        for (Method method : declaredMethods) {
+            System.out.println(method);
+        }
+
 
         System.out.println("获取构造函数------------------");
         Constructor<?>[] constructors = peopleClass.getConstructors();
@@ -42,11 +49,15 @@ public class ReflectionDemo {
         set.setAccessible(true); //跳过访问权限检查，提高反射处理所读
         set.invoke(object, "leon");
 
-        set.setAccessible(true);
-        System.out.println("调用get："+get.invoke(object));
 
-        //私有方法不能访问
-        Method priMethod = peopleClass.getMethod("priMethod");
+        get.setAccessible(true);
+        System.out.println("调用get：" + get.invoke(object));
+        Field field = peopleClass.getDeclaredField("name");
+        field.setAccessible(true);
+        System.out.println("反射获取属性值：" + field.get(object));
+
+        //私有方法访问
+        Method priMethod = peopleClass.getDeclaredMethod("priMethod", null);
         priMethod.setAccessible(true);
         priMethod.invoke(object);
 
