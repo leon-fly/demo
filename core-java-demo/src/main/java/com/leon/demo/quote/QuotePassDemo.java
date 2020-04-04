@@ -12,10 +12,19 @@ public class QuotePassDemo implements Cloneable{
 		People p = new People("leon","M","123");
 		setPeopleName(p);
 		System.out.println(p.getName());
+
+		People p2 = new People("leon","M","123");
+		changePeople(p2);
+		System.out.println(p2.getName());
 	}
 	
 	public static void setPeopleName(People people){  //引用传递，传递的引用的地址副本，修改内容为引用指向的对象
 		people.setName("changedName");
+	}
+
+	public static void changePeople(People people){ //修改变量不会影响原变量
+		people = new People();
+		people.setName("new People");
 	}
 	
 	public int getNum(int b){  //值传递，变量的副本，修改后不影响原变量

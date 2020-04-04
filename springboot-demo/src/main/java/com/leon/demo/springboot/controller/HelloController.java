@@ -1,4 +1,4 @@
-package com.leon.demo.springboot;
+package com.leon.demo.springboot.controller;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 

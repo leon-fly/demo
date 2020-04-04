@@ -5,8 +5,10 @@ import java.util.LinkedHashMap;
 
 public class HashMapDemo {
     public static void main(String[] args) {
-        testHashMapKeyOrder();
-        testLinkedHashMapKeyOrder();
+        HashMap hashMap = new HashMap();
+        System.out.println(hashMap.size());
+//        testHashMapKeyOrder();
+//        testLinkedHashMapKeyOrder();
     }
 
     private static void testHashMapKeyOrder() {

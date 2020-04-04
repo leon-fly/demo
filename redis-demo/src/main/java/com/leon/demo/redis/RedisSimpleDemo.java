@@ -1,36 +1,26 @@
 package com.leon.demo.redis;
 
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
-import redis.clients.jedis.JedisPoolConfig;
-
-public class RedisDemo {
-    static JedisPoolConfig poolConfig;
-    static JedisPool pool;
-
-    static {
-        poolConfig = new JedisPoolConfig();
-        // 最大连接数
-        poolConfig.setMaxTotal(2);
-        // 最大空闲数
-        poolConfig.setMaxIdle(2);
-        // 最大允许等待时间，如果超过这个时间还未获取到连接，则会报JedisException异常：
-        // Could not get a resource from the pool
-        poolConfig.setMaxWaitMillis(1000);
-        pool = new JedisPool(poolConfig, "localhost", 6379, 0, null);
-    }
+/**
+ * 简单命令测试
+ */
+public class RedisSimpleDemo {
 
     public static void main(String[] args) {
         Jedis jedis = null;
+        JedisPool pool = RedisPoolHelper.getJedisPool(args[0], (Integer.valueOf(args[1])), args[2]);
         jedis = pool.getResource();
+
         try {
 //			delAll(jedis);
-//            testString(jedis);
+//          testString(jedis);
 //			testHash(jedis);
             testList(jedis);
 //			testSortedSet(jedis);

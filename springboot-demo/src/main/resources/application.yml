@@ -1,0 +1,12 @@
+spring:
+    redis:
+        database: 0
+        host: 'www.leonwang.tech'
+        password: '1qaz2wsx'
+        pool:
+            max-active: 50
+            max-idle: 50
+            max-wait: 2000
+            min-idle: 0
+        port: 6379
+        timeout: 2000
