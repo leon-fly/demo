@@ -2,7 +2,7 @@ spring:
     redis:
         database: 0
         host: 'www.leonwang.tech'
-        password: '1qaz2wsx'
+        password: 'yourpwd'
         pool:
             max-active: 50
             max-idle: 50

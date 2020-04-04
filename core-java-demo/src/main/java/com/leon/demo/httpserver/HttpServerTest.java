@@ -67,7 +67,7 @@ class MyHandler implements HttpHandler {
                         "set timeout 120\n" +
                         "spawn git pull\n" +
                         "expect \"*passphrase*\"\n" +
-                        "send \"1qaz2wsx\\r\"\n" +
+                        "send \"yourpwd\\r\"\n" +
                         "expect eof\n" +
                         "!\n" +
                         "echo \"$(date) git pull finished\"'");
