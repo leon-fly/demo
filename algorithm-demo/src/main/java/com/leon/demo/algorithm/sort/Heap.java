@@ -1,4 +1,4 @@
-package com.leon.demo.algorithm;
+package com.leon.demo.algorithm.sort;
 
 /**
  * @Author : leonwang

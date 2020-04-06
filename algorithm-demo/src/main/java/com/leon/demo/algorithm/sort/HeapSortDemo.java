@@ -1,4 +1,4 @@
-package com.leon.demo.algorithm;
+package com.leon.demo.algorithm.sort;
 
 import java.util.ArrayList;
 import java.util.Arrays;
