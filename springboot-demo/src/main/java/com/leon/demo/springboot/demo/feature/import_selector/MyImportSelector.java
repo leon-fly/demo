@@ -7,7 +7,7 @@ import org.springframework.core.type.AnnotationMetadata;
 
 /**
  * @Author : leonwang
- * @Descpriction
+ * @Descpriction 使用ImportSelector选择需要spring管理的bean
  * @Date:created 2020/4/4
  */
 public class MyImportSelector implements ImportSelector {
