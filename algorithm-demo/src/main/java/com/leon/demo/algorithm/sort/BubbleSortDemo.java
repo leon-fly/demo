@@ -13,10 +13,11 @@ import java.util.Arrays;
 public class BubbleSortDemo {
     public static void main(String[] args) {
         int[] array = {10, 4, 9, 6, 1, 3, 5, 8};
-        System.out.println(Arrays.toString(sortAsc(array)));
+        sortAsc(array);
+        System.out.println(Arrays.toString(array));
     }
 
-    public static int[] sortAsc(int[] array) {
+    public static void sortAsc(int[] array) {
         for (int max = array.length; max > 0; max--) {
             // 提前退出冒泡循环的标志位
             boolean flag = false;
@@ -34,6 +35,5 @@ public class BubbleSortDemo {
                 break; // 没有数据交换，提前退出
             }
         }
-        return array;
     }
 }

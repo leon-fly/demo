@@ -14,7 +14,8 @@ import java.util.Arrays;
 public class SelectSortedDemo {
     public static void main(String[] args) {
         int[] array = {10, 4, 9, 6, 1, 3, 5, 8};
-        System.out.println(Arrays.toString(sortAsc(array)));
+        sortAsc(array);
+        System.out.println(Arrays.toString(array));
     }
 
     public static int[] sortAsc(int[] array) {

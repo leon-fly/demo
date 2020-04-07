@@ -1,5 +1,7 @@
 package com.leon.demo.algorithm.sort;
 
+import com.leon.demo.algorithm.DataGenerator;
+
 import java.util.Arrays;
 
 /**
@@ -14,11 +16,12 @@ import java.util.Arrays;
  */
 public class InsertionSortDemo {
     public static void main(String[] args) {
-        int[] array = {10, 4, 9, 6, 1, 3, 5, 8};
-        System.out.println(Arrays.toString(sortAsc(array)));
+        int[] array = DataGenerator.generatePositiveNum(100, 1000);
+        sortAsc(array);
+        System.out.println(Arrays.toString(array));
     }
 
-    public static int[] sortAsc(int[] array) {
+    public static void sortAsc(int[] array) {
         for (int index = 1; index < array.length; index++) {
             int changePosition = 0;
             for (int i = 0; i < index; i++) {
@@ -35,6 +38,5 @@ public class InsertionSortDemo {
                 }
             }
         }
-        return array;
     }
 }
