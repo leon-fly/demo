@@ -40,6 +40,7 @@
         <module>algorithm-demo</module>
         <module>mybatis-demo</module>
         <module>docker-demo</module>
+        <module>spring-demo</module>
     </modules>
 
     <name>demo</name>
