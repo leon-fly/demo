@@ -1,4 +1,4 @@
-package com.leon.demo.service;
+package com.leon.demo.service.interface_;
 
 /**
  * @Author : leonwang

@@ -3,12 +3,10 @@ package com.leon.demo;
 import static org.junit.Assert.assertTrue;
 
 import com.leon.demo.advice.MyAdvice;
-import com.leon.demo.service.GenericService;
-import com.leon.demo.service.impl.GenericServiceImpl;
-import com.sun.tools.internal.jxc.gen.config.Classes;
+import com.leon.demo.service.interface_.GenericService;
+import com.leon.demo.service.GenericServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.test.context.ContextConfiguration;

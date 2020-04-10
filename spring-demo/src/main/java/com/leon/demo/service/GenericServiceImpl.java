@@ -1,6 +1,6 @@
-package com.leon.demo.service.impl;
+package com.leon.demo.service;
 
-import com.leon.demo.service.GenericService;
+import com.leon.demo.service.interface_.GenericService;
 import org.springframework.stereotype.Component;
 
 /**
