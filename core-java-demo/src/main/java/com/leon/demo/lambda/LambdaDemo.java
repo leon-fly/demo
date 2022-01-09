@@ -15,7 +15,7 @@ public class LambdaDemo {
 	
 	public static void testList(){
 		//集合操作，遍历
-		ArrayList<String> list = new ArrayList<String>();
+		ArrayList<String> list = new ArrayList();
 		list.add("leon");
 		list.add("wang");
 
@@ -28,4 +28,5 @@ public class LambdaDemo {
 		Consumer<String> consumer = (String x) -> System.out.print(x);
 		list.forEach(consumer);
 	}
+
 }
