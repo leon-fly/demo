@@ -79,7 +79,7 @@
         <fastjson.version>1.2.31</fastjson.version>
         <org.freemarker.version>2.3.28</org.freemarker.version>
         <groovy-all.version>3.0.0-beta-1</groovy-all.version>
-        <dubbo.version>2.5.3</dubbo.version>
+        <dubbo.version>2.6.9</dubbo.version>
         <zookeeper.version>3.4.8</zookeeper.version>
         <fastjson.version>1.2.47</fastjson.version>
         <spring-cloud.version>Edgware.SR3</spring-cloud.version>
